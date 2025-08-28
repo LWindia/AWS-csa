@@ -68,10 +68,13 @@ const CallToAction = () => {
               <div className="text-center lg:text-left">
                 <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-8 rounded-2xl mb-6">
                   <div className="text-white text-center">
-                    <div className="text-3xl font-bold mb-2">₹49,999</div>
-                    <div className="text-orange-100 text-lg line-through mb-2">₹79,999</div>
-                    <div className="text-sm bg-white/20 rounded-full px-4 py-2 inline-block">
-                      Early Bird Offer - 37% OFF
+                    <div className="text-3xl font-bold mb-2">₹5,000</div>
+                    <div className="text-orange-100 text-lg line-through mb-2">₹10,000</div>
+                    <div className="text-sm bg-white/20 rounded-full px-4 py-2 inline-block mb-3">
+                      Early Bird Offer - 50% OFF
+                    </div>
+                    <div className="text-sm bg-white/10 rounded-full px-4 py-2 inline-block">
+                      🗓️ Starting 2nd Sept 2025
                     </div>
                   </div>
                 </div>

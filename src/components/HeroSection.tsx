@@ -16,13 +16,13 @@ const HeroSection = () => {
         <div className="absolute top-1/2 right-1/3 w-20 h-20 bg-gradient-to-br from-green-400/20 to-blue-500/20 rounded-full blur-xl animate-bounce"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 py-8 lg:py-16">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-4rem)] relative">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-8 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[calc(100vh-4rem)] relative">
           
-          {/* Left Content Column */}
-          <div className="space-y-8 lg:space-y-10 order-2 lg:order-1">
+          {/* Left Content Column - Course Information */}
+          <div className="space-y-6 lg:space-y-8 order-1 lg:order-1 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-full text-orange-600 dark:text-orange-400 text-sm font-medium backdrop-blur-sm">
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-full text-orange-600 dark:text-orange-400 text-sm font-medium">
               <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 animate-pulse"></span>
               Live Training Available
             </div>
@@ -41,24 +41,24 @@ const HeroSection = () => {
             </div>
 
             {/* Subheadline */}
-            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg mx-auto lg:mx-0">
               Build skills for the future. Master AWS. Accelerate your career with 
               India's most trusted cloud computing mentor.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex justify-center sm:justify-start">
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25 flex items-center justify-center overflow-hidden">
+            {/* CTA Button */}
+            <div className="flex justify-center lg:justify-start pt-4">
+              <button className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25 flex items-center">
                 <span className="relative z-10 flex items-center">
                   Register Now
                   <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
               </button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex items-center space-x-6 pt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-6 pt-6">
               <div className="flex items-center space-x-2">
                 <div className="flex -space-x-1">
                   {[1, 2, 3, 4].map((i) => (
@@ -77,38 +77,24 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Center Cloud Image */}
-          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
-            <div className="relative">
-              <img 
-                src="/images/cloud-1.png" 
-                alt="Cloud" 
-                className="w-32 h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 opacity-80 animate-float drop-shadow-2xl filter brightness-110 contrast-125"
-              />
-              {/* Glow Effect */}
-              <div className="absolute inset-0 w-full h-full bg-yellow-400/20 rounded-full blur-3xl animate-pulse"></div>
-              {/* Sparkle Effects */}
-              <div className="absolute -top-2 -left-2 w-3 h-3 bg-yellow-400 rounded-full animate-ping"></div>
-              <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-orange-400 rounded-full animate-ping delay-1000"></div>
-              <div className="absolute top-1/2 -right-4 w-2 h-2 bg-yellow-300 rounded-full animate-ping delay-500"></div>
-            </div>
-          </div>
-
-          {/* Right Video Column */}
-          <div className="order-1 lg:order-2 relative">
+          {/* Right Video Column - World Record Section */}
+          <div className="order-2 lg:order-2 relative">
             {/* Video Container */}
-            <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-2xl shadow-gray-900/50 overflow-hidden">
+            <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl overflow-hidden">
               {/* Video Player */}
-              <div className="relative w-full aspect-video bg-gray-800 rounded-3xl overflow-hidden">
-                {/* Video Player */}
+              <div className="relative w-full aspect-video bg-gray-800 rounded-t-2xl overflow-hidden">
                 <video 
-                  className="w-full h-full object-contain rounded-3xl"
+                  className="w-full h-full object-contain"
                   poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                   autoPlay
                   loop
                   muted
                   playsInline
                   preload="auto"
+                  onError={(e) => {
+                    const target = e.target as HTMLVideoElement;
+                    target.style.display = 'none';
+                  }}
                 >
                   <source src="/videos/asset1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
@@ -117,7 +103,7 @@ const HeroSection = () => {
 
               {/* World Record Achievement */}
               <div className="text-center space-y-4 p-6">
-                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full text-yellow-400 text-sm font-medium mb-4">
+                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full text-yellow-400 text-sm font-medium">
                   <span className="w-2 h-2 bg-yellow-500 rounded-full mr-2 animate-pulse"></span>
                   🏆 World Record Holder
                 </div>
@@ -136,10 +122,31 @@ const HeroSection = () => {
                 </button>
               </div>
             </div>
+          </div>
 
-            {/* Background Decorative Elements */}
-            <div className="absolute -z-10 inset-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 dark:from-gray-700/20 dark:to-gray-800/20 rounded-3xl transform rotate-3 scale-105"></div>
-            <div className="absolute -z-20 inset-0 bg-gradient-to-br from-blue-900/30 to-purple-900/30 dark:from-blue-800/10 dark:to-purple-800/10 rounded-3xl transform -rotate-3 scale-110"></div>
+          {/* Center Cloud Image - Enhanced Glowing Effects - Hidden on Mobile */}
+          <div className="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
+            <div className="relative">
+              <img 
+                src="/images/cloud-1.png" 
+                alt="Cloud" 
+                className="w-28 h-28 xl:w-32 xl:h-32 opacity-80 animate-float drop-shadow-2xl filter brightness-110 contrast-125"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                }}
+              />
+              {/* Enhanced Glow Effect */}
+              <div className="absolute inset-0 w-full h-full bg-yellow-400/30 rounded-full blur-3xl animate-pulse"></div>
+              {/* Additional Glow Layers for Better Effect */}
+              <div className="absolute inset-0 w-full h-full bg-orange-400/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+              <div className="absolute inset-0 w-full h-full bg-yellow-300/25 rounded-full blur-xl animate-pulse delay-500"></div>
+              {/* Sparkle Effects */}
+              <div className="absolute -top-2 -left-2 w-3 h-3 bg-yellow-400 rounded-full animate-ping"></div>
+              <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-orange-400 rounded-full animate-ping delay-1000"></div>
+              <div className="absolute top-1/2 -right-4 w-2 h-2 bg-yellow-300 rounded-full animate-ping delay-500"></div>
+              <div className="absolute -top-3 right-1/2 w-2 h-2 bg-orange-300 rounded-full animate-ping delay-1500"></div>
+            </div>
           </div>
         </div>
 
