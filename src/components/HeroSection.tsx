@@ -17,7 +17,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-8 lg:py-16">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-4rem)]">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-4rem)] relative">
           
           {/* Left Content Column */}
           <div className="space-y-8 lg:space-y-10 order-2 lg:order-1">
@@ -77,16 +77,32 @@ const HeroSection = () => {
             </div>
           </div>
 
+          {/* Center Cloud Image */}
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
+            <div className="relative">
+              <img 
+                src="/images/cloud-1.png" 
+                alt="Cloud" 
+                className="w-32 h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 opacity-80 animate-float drop-shadow-2xl filter brightness-110 contrast-125"
+              />
+              {/* Glow Effect */}
+              <div className="absolute inset-0 w-full h-full bg-yellow-400/20 rounded-full blur-3xl animate-pulse"></div>
+              {/* Sparkle Effects */}
+              <div className="absolute -top-2 -left-2 w-3 h-3 bg-yellow-400 rounded-full animate-ping"></div>
+              <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-orange-400 rounded-full animate-ping delay-1000"></div>
+              <div className="absolute top-1/2 -right-4 w-2 h-2 bg-yellow-300 rounded-full animate-ping delay-500"></div>
+            </div>
+          </div>
+
           {/* Right Video Column */}
           <div className="order-1 lg:order-2 relative">
             {/* Video Container */}
             <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-2xl shadow-gray-900/50 overflow-hidden">
-
               {/* Video Player */}
-              <div className="relative w-full aspect-video bg-gray-800 rounded-2xl overflow-hidden">
+              <div className="relative w-full aspect-video bg-gray-800 rounded-3xl overflow-hidden">
                 {/* Video Player */}
                 <video 
-                  className="w-full h-full object-contain rounded-2xl"
+                  className="w-full h-full object-contain rounded-3xl"
                   poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                   autoPlay
                   loop
@@ -100,7 +116,7 @@ const HeroSection = () => {
               </div>
 
               {/* World Record Achievement */}
-              <div className="text-center space-y-4">
+              <div className="text-center space-y-4 p-6">
                 <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full text-yellow-400 text-sm font-medium mb-4">
                   <span className="w-2 h-2 bg-yellow-500 rounded-full mr-2 animate-pulse"></span>
                   🏆 World Record Holder
