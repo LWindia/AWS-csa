@@ -83,6 +83,7 @@ const HeroSection = () => {
             <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl overflow-hidden">
               {/* Video Player */}
               <div className="relative w-full aspect-video bg-gray-800 rounded-t-2xl overflow-hidden">
+                {/* Video Player */}
                 <video 
                   className="w-full h-full object-contain"
                   poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
@@ -91,6 +92,10 @@ const HeroSection = () => {
                   muted
                   playsInline
                   preload="auto"
+                  webkit-playsinline="true"
+                  x5-playsinline="true"
+                  x5-video-player-type="h5"
+                  x5-video-player-fullscreen="true"
                   onError={(e) => {
                     const target = e.target as HTMLVideoElement;
                     target.style.display = 'none';
@@ -99,6 +104,27 @@ const HeroSection = () => {
                   <source src="/videos/asset1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+                
+                {/* Mobile Play Button Overlay */}
+                <div className="md:hidden absolute inset-0 bg-black/20 flex items-center justify-center">
+                  <button 
+                    onClick={(e) => {
+                      const video = e.currentTarget.parentElement?.querySelector('video') as HTMLVideoElement;
+                      if (video) {
+                        video.play().catch(() => {
+                          // Fallback: show poster image if video can't play
+                          video.style.display = 'none';
+                        });
+                      }
+                      e.currentTarget.style.display = 'none';
+                    }}
+                    className="bg-orange-500 hover:bg-orange-600 text-white rounded-full p-4 transition-colors duration-300 shadow-lg"
+                  >
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
 
               {/* World Record Achievement */}
