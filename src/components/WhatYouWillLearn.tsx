@@ -135,7 +135,7 @@ const WhatYouWillLearn = () => {
                 <span className="text-2xl font-bold">3</span>
               </div>
               <h4 className="text-lg font-semibold mb-2">Implementation</h4>
-              <p className="text-gray-300 text-sm">Hands-on projects and labs</p>
+              <p className="text-gray-300 text-sm">Hands-on projects</p>
             </div>
             
             <div className="text-center">

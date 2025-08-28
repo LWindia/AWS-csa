@@ -83,7 +83,7 @@ const CallToAction = () => {
 
                 <div className="flex items-center justify-center text-gray-300 text-sm">
                   <Award className="w-4 h-4 mr-2" />
-                  <span>100% Money-back guarantee</span>
+                  <span>Quality training guarantee</span>
                 </div>
               </div>
             </div>
@@ -99,8 +99,8 @@ const CallToAction = () => {
             
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
               <div className="text-2xl font-bold text-orange-400 mb-2">🎯</div>
-              <div className="text-white font-semibold mb-1">Job Guarantee</div>
-              <div className="text-gray-300 text-sm">Or get your money back</div>
+              <div className="text-white font-semibold mb-1">Job Assistance</div>
+              <div className="text-gray-300 text-sm">Career placement support</div>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
