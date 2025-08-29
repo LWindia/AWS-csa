@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Star, Users, Award, ArrowRight } from 'lucide-react';
+import { ChevronRight, Star, Users, Award, ArrowRight, Calendar, Clock, Timer } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -58,6 +58,28 @@ const HeroSection = () => {
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
               </button>
+            </div>
+
+            {/* Course Details */}
+            <div className="mt-4 lg:mt-6 space-y-2 lg:space-y-3">
+              <div className="flex items-center justify-center lg:justify-start space-x-2 lg:space-x-3">
+                <Calendar className="w-4 h-4 lg:w-5 lg:h-5 text-orange-500" />
+                <span className="text-xs lg:text-sm text-gray-600 dark:text-gray-500">
+                  <span className="font-medium">Starting from:</span> 9th Sept 2025
+                </span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start space-x-2 lg:space-x-3">
+                <Clock className="w-4 h-4 lg:w-5 lg:h-5 text-orange-500" />
+                <span className="text-xs lg:text-sm text-gray-600 dark:text-gray-500">
+                  <span className="font-medium">Time:</span> 9pm Tue to Friday
+                </span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start space-x-2 lg:space-x-3">
+                <Timer className="w-4 h-4 lg:w-5 lg:h-5 text-orange-500" />
+                <span className="text-xs lg:text-sm text-gray-600 dark:text-gray-500">
+                  <span className="font-medium">Duration:</span> 40hrs
+                </span>
+              </div>
             </div>
 
             {/* Trust Indicators */}

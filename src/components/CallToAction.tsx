@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Star, Users, Award, CheckCircle } from 'lucide-react';
+import { ArrowRight, Star, Users, Award, CheckCircle, Calendar, Clock, Timer } from 'lucide-react';
 
 const CallToAction = () => {
   return (
@@ -73,6 +73,23 @@ const CallToAction = () => {
                     <div className="text-sm bg-white/20 rounded-full px-4 py-2 inline-block mb-3">
                       Early Bird Offer - 50% OFF
                     </div>
+                    
+                    {/* Course Details */}
+                    <div className="space-y-2 mb-3">
+                      <div className="flex items-center justify-center space-x-2 text-white text-xs">
+                        <Calendar className="w-3 h-3 text-orange-200" />
+                        <span><span className="font-medium">Starting from:</span> 9th Sept 2025</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-2 text-white text-xs">
+                        <Clock className="w-3 h-3 text-orange-200" />
+                        <span><span className="font-medium">Time:</span> 9pm Tue to Friday</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-2 text-white text-xs">
+                        <Timer className="w-3 h-3 text-orange-200" />
+                        <span><span className="font-medium">Duration:</span> 40hrs</span>
+                      </div>
+                    </div>
+                    
                     <div className="text-sm bg-white/10 rounded-full px-4 py-2 inline-block">
                       🗓️ Starting 2nd Sept 2025
                     </div>
