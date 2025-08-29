@@ -98,7 +98,7 @@ const WhatYouWillLearn = () => {
       topics: ["Encryption: KMS, CloudHSM, and Secrets Manager", "GuardDuty, Inspector, and Security Hub", "AWS WAF & Shield for Threat Protection", "Compliance and Audit Tools"]
     },
     {
-      icon: TrendingUp,
+      icon: Award,
       title: "Module 14: Cost Optimization & Governance",
       description: "Optimize costs and implement governance controls",
       topics: ["AWS Pricing Models & Savings Plans", "AWS Budgets and Cost Explorer", "Resource Tagging Strategy", "Governance with AWS Control Tower"]
@@ -112,43 +112,43 @@ const WhatYouWillLearn = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-slate-50 to-white">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4 sm:mb-6 px-2">
             What You Will <span className="text-orange-500">Learn</span>
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto px-4 sm:px-6">
             Comprehensive 15-module curriculum designed by industry experts to make you job-ready 
             and certification-ready in AWS Solutions Architecture.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
           {modules.map((module, index) => {
             const Icon = module.icon;
             return (
               <div
                 key={index}
-                className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-slate-100 hover:border-orange-200"
+                className="group bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 lg:hover:-translate-y-3 border border-slate-100 hover:border-orange-200"
               >
-                <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                  <Icon className="w-8 h-8 text-white" />
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                  <Icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-orange-600 transition-colors duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-3 sm:mb-4 group-hover:text-orange-600 transition-colors duration-300 leading-tight">
                   {module.title}
                 </h3>
                 
-                <p className="text-slate-600 mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-600 mb-4 sm:mb-6 leading-relaxed">
                   {module.description}
                 </p>
                 
-                <div className="space-y-3">
+                <div className="space-y-2 sm:space-y-3">
                   {module.topics.map((topic, topicIndex) => (
                     <div key={topicIndex} className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-700 text-sm leading-relaxed">{topic}</span>
+                      <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm text-slate-700 leading-relaxed">{topic}</span>
                     </div>
                   ))}
                 </div>
@@ -158,39 +158,39 @@ const WhatYouWillLearn = () => {
         </div>
 
         {/* Additional Information */}
-        <div className="bg-gradient-to-r from-slate-900 to-blue-900 rounded-3xl p-8 md:p-12 text-white text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-6">
+        <div className="bg-gradient-to-r from-slate-900 to-blue-900 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-white text-center">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 px-2">
             Complete AWS Solutions Architect Journey
           </h3>
-          <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
             From foundational concepts to advanced architectural patterns, this comprehensive program 
             covers everything you need to become an AWS Certified Solutions Architect. Each module 
             builds upon the previous one, ensuring a solid understanding of cloud architecture principles.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="w-8 h-8 text-white" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <BookOpen className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
               </div>
-              <h4 className="text-xl font-semibold mb-2">15 Comprehensive Modules</h4>
-              <p className="text-gray-300 text-sm">Structured learning path from basics to advanced</p>
+              <h4 className="text-lg sm:text-xl font-semibold mb-2">15 Comprehensive Modules</h4>
+              <p className="text-xs sm:text-sm text-gray-300">Structured learning path from basics to advanced</p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Code className="w-8 h-8 text-white" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-green-400 to-blue-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <Code className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
               </div>
-              <h4 className="text-xl font-semibold mb-2">Hands-On Projects</h4>
-              <p className="text-gray-300 text-sm">Real-world implementation and practice</p>
+              <h4 className="text-lg sm:text-xl font-semibold mb-2">Hands-On Projects</h4>
+              <p className="text-xs sm:text-sm text-gray-300">Real-world implementation and practice</p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-white" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <Award className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
               </div>
-              <h4 className="text-xl font-semibold mb-2">Exam Preparation</h4>
-              <p className="text-gray-300 text-sm">Mock exams and certification guidance</p>
+              <h4 className="text-lg sm:text-xl font-semibold mb-2">Exam Preparation</h4>
+              <p className="text-xs sm:text-sm text-gray-300">Mock exams and certification guidance</p>
             </div>
           </div>
         </div>

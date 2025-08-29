@@ -29,19 +29,19 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <div className="space-y-3 lg:space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white leading-tight px-2 sm:px-0">
                 <span className="block">AWS Certified</span>
                 <span className="block bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 bg-clip-text text-transparent">
                   Solutions Architect
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 font-medium">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 font-medium px-2 sm:px-0">
                 Training with Vimal Daga Sir
               </p>
             </div>
 
             {/* Subheadline */}
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg mx-auto lg:mx-0 px-2 lg:px-0">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg mx-auto lg:mx-0 px-4 sm:px-6 lg:px-0">
               Build skills for the future. Master AWS. Accelerate your career with 
               India's most trusted cloud computing mentor.
             </p>
@@ -50,7 +50,7 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-start pt-2 lg:pt-4">
               <button 
                 onClick={() => window.open('https://rzp.io/rzp/tqFusAP', '_blank')}
-                className="group relative px-6 py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25 flex items-center text-sm lg:text-base cursor-pointer"
+                className="group relative px-5 py-3 sm:px-6 sm:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25 flex items-center text-sm lg:text-base cursor-pointer w-full sm:w-auto justify-center"
               >
                 <span className="relative z-10 flex items-center">
                   Register Now
@@ -83,9 +83,9 @@ const HeroSection = () => {
           {/* Right Video Column - World Record Section */}
           <div className="order-2 lg:order-2 relative">
             {/* Video Container */}
-            <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl overflow-hidden">
+            <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl sm:rounded-2xl shadow-2xl overflow-hidden">
               {/* Video Player */}
-              <div className="relative w-full aspect-video bg-gray-800 rounded-2xl lg:rounded-t-2xl overflow-hidden">
+              <div className="relative w-full aspect-video bg-gray-800 rounded-xl sm:rounded-2xl lg:rounded-t-2xl overflow-hidden">
                 {/* Video Player */}
                 <video 
                   className="w-full h-full object-contain"
@@ -137,10 +137,10 @@ const HeroSection = () => {
                   🏆 World Record Holder
                 </div>
                 
-                <h3 className="text-xl lg:text-2xl font-bold text-white">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white px-2">
                   Vimal Daga's World Record
                 </h3>
-                <p className="text-sm lg:text-base text-gray-300 leading-relaxed px-2 lg:px-0">
+                <p className="text-xs sm:text-sm lg:text-base text-gray-300 leading-relaxed px-4 sm:px-2 lg:px-0">
                   <span className="text-yellow-400 font-semibold">11 Global Certifications in 11 Days!</span><br/>
                   Experience training from the world's fastest cloud certification achiever
                 </p>
@@ -183,26 +183,26 @@ const HeroSection = () => {
         </div>
 
         {/* Bottom Stats Bar */}
-        <div className="mt-16 lg:mt-20">
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl p-6 lg:p-8 border border-gray-200/50 dark:border-gray-700/50 shadow-xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-12 sm:mt-16 lg:mt-20">
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 border border-gray-200/50 dark:border-gray-700/50 shadow-xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               <div className="text-center group">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
                   10,000+
                 </div>
-                <div className="text-gray-600 dark:text-gray-400 font-medium">Students Trained</div>
+                <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400 font-medium">Students Trained</div>
               </div>
               <div className="text-center group">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
                   95%
                 </div>
-                <div className="text-gray-600 dark:text-gray-400 font-medium">Success Rate</div>
+                <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400 font-medium">Success Rate</div>
               </div>
               <div className="text-center group">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
                   500+
                 </div>
-                <div className="text-gray-600 dark:text-gray-400 font-medium">Companies Hiring</div>
+                <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400 font-medium">Companies Partnered</div>
               </div>
             </div>
           </div>
