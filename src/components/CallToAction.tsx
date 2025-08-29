@@ -68,8 +68,8 @@ const CallToAction = () => {
               <div className="text-center lg:text-left">
                 <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-8 rounded-2xl mb-6">
                   <div className="text-white text-center">
-                    <div className="text-3xl font-bold mb-2">₹5,000</div>
-                    <div className="text-orange-100 text-lg line-through mb-2">₹10,000</div>
+                    <div className="text-3xl font-bold mb-2">₹2,500</div>
+                    <div className="text-orange-100 text-lg line-through mb-2">₹5,000</div>
                     <div className="text-sm bg-white/20 rounded-full px-4 py-2 inline-block mb-3">
                       Early Bird Offer - 50% OFF
                     </div>
@@ -79,7 +79,10 @@ const CallToAction = () => {
                   </div>
                 </div>
 
-                <button className="group w-full bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-white/25 flex items-center justify-center mb-4">
+                <button 
+                  onClick={() => window.open('https://rzp.io/rzp/tqFusAP', '_blank')}
+                  className="group w-full bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-white/25 flex items-center justify-center mb-4 cursor-pointer"
+                >
                   Join the Training
                   <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>

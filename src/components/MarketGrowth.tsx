@@ -69,10 +69,13 @@ const MarketGrowth = () => {
             By 2025, 85% of enterprises will have a cloud-first principle. 
             AWS professionals are in unprecedented demand across all industries.
           </p>
-          <div className="inline-flex items-center px-6 py-3 bg-orange-500 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 cursor-pointer">
+          <button 
+            onClick={() => window.open('https://rzp.io/rzp/tqFusAP', '_blank')}
+            className="inline-flex items-center px-6 py-3 bg-orange-500 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 cursor-pointer"
+          >
             Join the Revolution
             <TrendingUp className="ml-2 w-5 h-5" />
-          </div>
+          </button>
         </div>
       </div>
     </section>

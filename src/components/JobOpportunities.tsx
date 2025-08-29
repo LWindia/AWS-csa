@@ -155,7 +155,10 @@ const JobOpportunities = () => {
           <p className="text-lg mb-6">
             AWS professionals needed in India by 2025. Will you be one of them?
           </p>
-          <button className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
+          <button 
+            onClick={() => window.open('https://rzp.io/rzp/tqFusAP', '_blank')}
+            className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition-colors duration-300 cursor-pointer"
+          >
             Start Your Journey
           </button>
         </div>

@@ -16,63 +16,66 @@ const HeroSection = () => {
         <div className="absolute top-1/2 right-1/3 w-20 h-20 bg-gradient-to-br from-green-400/20 to-blue-500/20 rounded-full blur-xl animate-bounce"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-8 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[calc(100vh-4rem)] relative">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-6 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-center min-h-[calc(100vh-4rem)] relative">
           
           {/* Left Content Column - Course Information */}
-          <div className="space-y-6 lg:space-y-8 order-1 lg:order-1 text-center lg:text-left">
+          <div className="space-y-4 lg:space-y-8 order-1 lg:order-1 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-full text-orange-600 dark:text-orange-400 text-sm font-medium">
+            <div className="inline-flex items-center px-3 py-2 lg:px-4 lg:py-2 bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-full text-orange-600 dark:text-orange-400 text-xs lg:text-sm font-medium">
               <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 animate-pulse"></span>
               Live Training Available
             </div>
 
             {/* Main Headline */}
-            <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
+            <div className="space-y-3 lg:space-y-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
                 <span className="block">AWS Certified</span>
                 <span className="block bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 bg-clip-text text-transparent">
                   Solutions Architect
                 </span>
               </h1>
-              <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 font-medium">
+              <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 font-medium">
                 Training with Vimal Daga Sir
               </p>
             </div>
 
             {/* Subheadline */}
-            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg mx-auto lg:mx-0 px-2 lg:px-0">
               Build skills for the future. Master AWS. Accelerate your career with 
               India's most trusted cloud computing mentor.
             </p>
 
             {/* CTA Button */}
-            <div className="flex justify-center lg:justify-start pt-4">
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25 flex items-center">
+            <div className="flex justify-center lg:justify-start pt-2 lg:pt-4">
+              <button 
+                onClick={() => window.open('https://rzp.io/rzp/tqFusAP', '_blank')}
+                className="group relative px-6 py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25 flex items-center text-sm lg:text-base cursor-pointer"
+              >
                 <span className="relative z-10 flex items-center">
                   Register Now
-                  <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ChevronRight className="ml-2 w-4 h-4 lg:w-5 lg:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
               </button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-6 pt-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-6 pt-4 lg:pt-6">
               <div className="flex items-center space-x-2">
                 <div className="flex -space-x-1">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
-                      <Users className="w-4 h-4 text-white" />
+                    <div key={i} className="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-white dark:border-gray-800 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                      <Users className="w-3 h-3 lg:w-4 lg:h-4 text-white" />
                     </div>
                   ))}
                 </div>
-                <span className="text-sm text-gray-600 dark:text-gray-400">10,000+ Students</span>
+                <span className="text-xs lg:text-sm text-gray-600 dark:text-gray-400">10,000+ Students</span>
               </div>
               
               <div className="flex items-center space-x-1">
-                <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                <span className="text-sm text-gray-600 dark:text-gray-400">4.9/5 Rating</span>
+                <Star className="w-4 h-4 lg:w-5 lg:h-5 text-yellow-500 fill-current" />
+                <span className="text-xs lg:text-sm text-gray-600 dark:text-gray-400">4.9/5 Rating</span>
               </div>
             </div>
           </div>
@@ -82,7 +85,7 @@ const HeroSection = () => {
             {/* Video Container */}
             <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl overflow-hidden">
               {/* Video Player */}
-              <div className="relative w-full aspect-video bg-gray-800 rounded-t-2xl overflow-hidden">
+              <div className="relative w-full aspect-video bg-gray-800 rounded-2xl lg:rounded-t-2xl overflow-hidden">
                 {/* Video Player */}
                 <video 
                   className="w-full h-full object-contain"
@@ -118,9 +121,9 @@ const HeroSection = () => {
                       }
                       e.currentTarget.style.display = 'none';
                     }}
-                    className="bg-orange-500 hover:bg-orange-600 text-white rounded-full p-4 transition-colors duration-300 shadow-lg"
+                    className="bg-orange-500 hover:bg-orange-600 text-white rounded-full p-3 lg:p-4 transition-colors duration-300 shadow-lg"
                   >
-                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z"/>
                     </svg>
                   </button>
@@ -128,23 +131,26 @@ const HeroSection = () => {
               </div>
 
               {/* World Record Achievement */}
-              <div className="text-center space-y-4 p-6">
-                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full text-yellow-400 text-sm font-medium">
+              <div className="text-center space-y-3 lg:space-y-4 p-4 lg:p-6">
+                <div className="inline-flex items-center px-3 py-2 lg:px-4 lg:py-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full text-yellow-400 text-xs lg:text-sm font-medium">
                   <span className="w-2 h-2 bg-yellow-500 rounded-full mr-2 animate-pulse"></span>
                   🏆 World Record Holder
                 </div>
                 
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-xl lg:text-2xl font-bold text-white">
                   Vimal Daga's World Record
                 </h3>
-                <p className="text-gray-300 text-base leading-relaxed">
+                <p className="text-sm lg:text-base text-gray-300 leading-relaxed px-2 lg:px-0">
                   <span className="text-yellow-400 font-semibold">11 Global Certifications in 11 Days!</span><br/>
                   Experience training from the world's fastest cloud certification achiever
                 </p>
                 
-                <button className="group w-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold py-3 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25 flex items-center justify-center">
+                <button 
+                  onClick={() => window.open('https://rzp.io/rzp/tqFusAP', '_blank')}
+                  className="group w-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold py-2 lg:py-3 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25 flex items-center justify-center text-sm lg:text-base cursor-pointer"
+                >
                   <span>Learn from the Best</span>
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="ml-2 w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
               </div>
             </div>

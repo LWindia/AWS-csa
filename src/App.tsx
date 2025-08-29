@@ -122,11 +122,11 @@ function App() {
         <section id="market-growth">
           <MarketGrowth />
         </section>
-        <section id="job-opportunities">
-          <JobOpportunities />
-        </section>
         <section id="curriculum">
           <WhatYouWillLearn />
+        </section>
+        <section id="job-opportunities">
+          <JobOpportunities />
         </section>
         <section id="instructor">
           <TrainingHighlights />
@@ -239,7 +239,15 @@ function App() {
                 <p className="text-gray-400">&copy; 2025 AWS CSA Training with Vimal Daga Sir. All rights reserved.</p>
               </div>
               <div className="flex items-center space-x-6">
-                <span className="text-gray-400 text-sm">Powered by LinuxWorld India</span>
+                <span className="text-gray-400 text-sm">
+                  Powered by LinuxWorld India Designer and Developed by{' '}
+                  <span 
+                    onClick={() => window.open('https://www.linkedin.com/in/jibbran-ali/', '_blank')}
+                    className="text-gray-400 hover:text-orange-400 cursor-pointer transition-colors duration-300"
+                  >
+                    Jibbran Ali
+                  </span>
+                </span>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
                   <span className="text-orange-400 text-sm font-medium">Live Training Available</span>

@@ -50,10 +50,10 @@ const TrainingHighlights = () => {
   ];
 
   const achievements = [
-    { icon: Award, title: 'World Record Holder', desc: 'Largest Programming Lesson' },
-    { icon: Users, title: '50,000+ Students', desc: 'Mentored Globally' },
+    { icon: Award, title: 'World Record Holder', desc: '' },
+    { icon: Users, title: '10 Lakh + Students', desc: 'Mentored Globally' },
     { icon: Globe, title: 'TEDx Speaker', desc: 'International Recognition' },
-    { icon: Heart, title: 'Philanthropist', desc: 'Free Education Advocate' }
+    { icon: Heart, title: 'Senior Principal IT Consultant', desc: '' }
   ];
 
   const awsCertificates = [
@@ -156,10 +156,10 @@ const TrainingHighlights = () => {
                   23+ Years Experience
                 </div>
                 <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
-                  Free Education Advocate
+                  Senior Principal IT Consultant
                 </div>
                 <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">
-                  Global Impact
+                  2X TEDx Speaker
                 </div>
               </div>
             </div>

@@ -149,7 +149,7 @@ const CertificatesLayout: React.FC = () => {
             </div>
           </div>
         </div>
-{/*
+
         {/* Quote Section */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
@@ -162,7 +162,7 @@ const CertificatesLayout: React.FC = () => {
             <div className="text-orange-400 font-semibold">- Vimal Daga</div>
           </div>
         </div>
-*/}
+
       </div>
 
       {/* Certificate Modal */}
